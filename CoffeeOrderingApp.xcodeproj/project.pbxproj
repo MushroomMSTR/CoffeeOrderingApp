@@ -11,6 +11,9 @@
 		749327EA2A2D19E3001437A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749327E92A2D19E3001437A4 /* ContentView.swift */; };
 		749327EC2A2D19E4001437A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749327EB2A2D19E4001437A4 /* Assets.xcassets */; };
 		749327EF2A2D19E4001437A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749327EE2A2D19E4001437A4 /* Preview Assets.xcassets */; };
+		749327F72A2D1AA1001437A4 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749327F62A2D1AA1001437A4 /* Coffee.swift */; };
+		749327F92A2D1C2C001437A4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749327F82A2D1C2C001437A4 /* Order.swift */; };
+		749327FC2A2D1C9C001437A4 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749327FB2A2D1C9C001437A4 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		749327E92A2D19E3001437A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		749327EB2A2D19E4001437A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		749327EE2A2D19E4001437A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		749327F62A2D1AA1001437A4 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		749327F82A2D1C2C001437A4 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		749327FB2A2D1C9C001437A4 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		749327FD2A2D1D71001437A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,9 @@
 		749327E62A2D19E3001437A4 /* CoffeeOrderingApp */ = {
 			isa = PBXGroup;
 			children = (
+				749327FD2A2D1D71001437A4 /* Info.plist */,
+				749327FA2A2D1C6D001437A4 /* Services */,
+				749327F52A2D1A8E001437A4 /* Models */,
 				749327E72A2D19E3001437A4 /* CoffeeOrderingAppApp.swift */,
 				749327E92A2D19E3001437A4 /* ContentView.swift */,
 				749327EB2A2D19E4001437A4 /* Assets.xcassets */,
@@ -65,6 +75,23 @@
 				749327EE2A2D19E4001437A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		749327F52A2D1A8E001437A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				749327F62A2D1AA1001437A4 /* Coffee.swift */,
+				749327F82A2D1C2C001437A4 /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		749327FA2A2D1C6D001437A4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				749327FB2A2D1C9C001437A4 /* Webservice.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,9 @@
 			files = (
 				749327EA2A2D19E3001437A4 /* ContentView.swift in Sources */,
 				749327E82A2D19E3001437A4 /* CoffeeOrderingAppApp.swift in Sources */,
+				749327F92A2D1C2C001437A4 /* Order.swift in Sources */,
+				749327FC2A2D1C9C001437A4 /* Webservice.swift in Sources */,
+				749327F72A2D1AA1001437A4 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +300,7 @@
 				DEVELOPMENT_TEAM = 7HMM775WP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeOrderingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +330,7 @@
 				DEVELOPMENT_TEAM = 7HMM775WP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeOrderingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
