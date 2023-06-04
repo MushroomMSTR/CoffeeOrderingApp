@@ -81,7 +81,7 @@ struct CoffeeCellView: View {
 				.frame(width: 100, height: 100)
 				.cornerRadius(16)
 			Text(coffee.name)
-				.font(.title)
+				.font(.title2)
 				.padding([.leading],20)
 			Spacer()
 			Image(systemName: self.selection == self.coffee.name ? "checkmark": "").padding()
