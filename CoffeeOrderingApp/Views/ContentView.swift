@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+	
+	@ObservedObject private var orderListVM = OrderListViewModel()
+	
+	var body: some View {
+		
+		NavigationView {
+			OrderListView(orders: self.orderListVM.orders)
+				.navigationBarTitle("Coffee Orders")
+		}
+		 
+	}
+
 }
 
 struct ContentView_Previews: PreviewProvider {
